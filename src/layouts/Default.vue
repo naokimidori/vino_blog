@@ -66,6 +66,8 @@ export default {
   padding: 0 calc(var(--space) / 2);
   top:0;
   z-index: 10;
+  font-family: 'Century gothic', Helvetica;
+  font-weight: bold;
 
   &__left,
   &__right {
@@ -82,8 +84,8 @@ export default {
 
   @media screen and (min-width: 1300px) {
     //Make header sticky for large screens
-    position: sticky;
-    width: 100%;
+    // position: sticky;
+    // width: 100%;
   }
 }
 
@@ -101,6 +103,7 @@ export default {
   padding: calc(var(--space) / 3);
   text-align: center;
   font-size: .7em;
+  font-family: 'Century gothic', Helvetica;
 
   > span {
     margin: 0 .35em;

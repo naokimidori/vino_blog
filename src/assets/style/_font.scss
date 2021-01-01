@@ -7,3 +7,13 @@
   font-family: 'Century gothic';
   src: url('../font/century-gothic.ttf');
 }
+
+@font-face {
+  font-family: 'iconfont';  /* project id 2304604 */
+  src: url('//at.alicdn.com/t/font_2304604_t2vsc831y.eot');
+  src: url('//at.alicdn.com/t/font_2304604_t2vsc831y.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_2304604_t2vsc831y.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_2304604_t2vsc831y.woff') format('woff'),
+  url('//at.alicdn.com/t/font_2304604_t2vsc831y.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_2304604_t2vsc831y.svg#iconfont') format('svg');
+}
