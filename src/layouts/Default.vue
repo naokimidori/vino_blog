@@ -26,7 +26,7 @@
     </main>
 
     <footer class="footer">
-      <span class="footer__copyright">© vino | </span>
+      <span class="footer__copyright">© Vino | </span>
       <span class="footer__links">Powered by <a href="//gridsome.org"> Gridsome </a></span>
     </footer>
 
@@ -89,6 +89,7 @@ export default {
 
 .main {
   flex: 1;
+  width: 100%;
   margin: 0 auto;
   padding: 1.5vw 15px 0;
 }

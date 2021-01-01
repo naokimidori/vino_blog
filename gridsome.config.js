@@ -1,16 +1,10 @@
-// This is where project configuration and plugin options are located.
-// Learn more: https://gridsome.org/docs/config
-
-// Changes here requires a server restart.
-// To restart press CTRL + C in terminal and run `gridsome develop`
-
 module.exports = {
-  siteName: 'vino blog',
-  siteDescription: 'keep calm and carry on',
+  siteName: 'Vino\'s blog',
+  siteDescription: 'Keep Calm And Carry On',
 
   templates: {
-    Post: '/:title',
-    Tag: '/tag/:id'
+    Post: '/post/:title',
+    Tag: '/tag/:id',
   },
 
   plugins: [

@@ -3,19 +3,13 @@
 
 		<g-image alt="Author image" class="author__image" src="~/assets/images/author.jpg" width="210" height="210" />
 
-		<h1 v-if="showTitle" class="author__site-title">
+		<!-- <h1 v-if="showTitle" class="author__site-title">
 			{{ $static.metadata.siteName }}
-		</h1>
+		</h1> -->
 
 		<p class="author__intro">
 			{{ $static.metadata.siteDescription }}
 		</p>
-
-		<p class="author__links">
-			<a href="//twitter.com/gridsome">Follow on Twitter</a>
-			<a href="//github.com/gridsome/gridsome-starter-blog">GitHub</a>
-		</p>
-
 	</div>
 </template>
 
@@ -39,7 +33,7 @@ export default {
 	margin: 0 auto;
 	max-width: 500px;
 	text-align: center;
-	padding: calc(var(--space) / 2) 0;
+	padding: calc(var(--space) * 2) 0;
 
 	&__image {
 		border-radius: 100%;
@@ -49,7 +43,8 @@ export default {
 	}
 
 	&__intro {
-		opacity: .8;
+		font-size: 2em;
+		font-family: 'Century gothic', Helvetica;
 	}
 
 	&__site-title {
