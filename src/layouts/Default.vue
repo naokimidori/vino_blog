@@ -7,7 +7,15 @@
       </div>
       
       <div class="header__right">
-        
+        <g-link class="header__right_text" to="/posts">
+          <span>Posts</span>
+        </g-link>
+        <g-link class="header__right_text" to="/tags">
+          <span>Tags</span>
+        </g-link>
+        <g-link class="header__right_text" to="/about">
+          <span>About</span>
+        </g-link>
         <ToggleTheme />
       </div>
       
@@ -18,7 +26,7 @@
     </main>
 
     <footer class="footer">
-      <span class="footer__copyright">Copyright © {{ new Date().getFullYear() }}. </span>
+      <span class="footer__copyright">© vino | </span>
       <span class="footer__links">Powered by <a href="//gridsome.org"> Gridsome </a></span>
     </footer>
 
@@ -48,6 +56,9 @@ export default {
   flex-direction: column;
 }
 .header {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -60,6 +71,13 @@ export default {
   &__right {
     display: flex;
     align-items: center;
+  }
+
+  &__right_text {
+    text-decoration: none;
+    color: var(--body-color)!important;
+    font-size: .9em;
+    margin-right: .9em;
   }
 
   @media screen and (min-width: 1300px) {
@@ -79,9 +97,9 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: calc(var(--space) / 2);
+  padding: calc(var(--space) / 3);
   text-align: center;
-  font-size: .8em;
+  font-size: .7em;
 
   > span {
     margin: 0 .35em;
