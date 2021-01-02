@@ -4,6 +4,7 @@
 		<g-image alt="Author image" class="author__image" src="~/assets/images/author.jpg" width="210" height="210" />
 
 		<vue-typed-js
+			v-if="showDesc"
 			:strings="[$static.metadata.siteDescription, '尽人事，听天命！']"
 			:loop="true"
 			:startDelay="100"
@@ -40,7 +41,7 @@ query {
 
 <script>
 export default {
-	props: ['showTitle'],
+	props: ['showDesc'],
 	data: function () {
 		return {
 			contactMeList: [
