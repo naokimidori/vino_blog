@@ -103,7 +103,7 @@ export default {
   padding: calc(var(--space) / 3);
   text-align: center;
   font-size: .7em;
-  font-family: 'Century gothic', Helvetica;
+  // font-family: 'Century gothic', Helvetica;
 
   > span {
     margin: 0 .35em;
