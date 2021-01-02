@@ -16,10 +16,15 @@
 		</vue-typed-js>
 
 		<div class="contact_me">
-			<i class="font_icon">&#xea0a;</i>
-			<i class="font_icon">&#xe646;</i>
-			<i class="font_icon">&#xe645;</i>
-			<i class="font_icon">&#xe68d;</i>
+			<i
+				v-for="item in contactMeList"
+				class="font_icon"
+				:key="item.fontIcon"
+				@click="handleGoLink(item.url)"
+			>
+				{{ item.fontIcon }}
+			</i>
+
 		</div>
 	</div>
 </template>
@@ -35,7 +40,34 @@ query {
 
 <script>
 export default {
-	props: ['showTitle']
+	props: ['showTitle'],
+	data: function () {
+		return {
+			contactMeList: [
+				{
+					fontIcon: '\uea0a',
+					url: 'https://github.com/naokimidori',
+				},
+				{
+					fontIcon: '\ue646',
+					url: 'https://weibo.com/u/2202529127',
+				},
+				{
+					fontIcon: '\ue645',
+					url: 'https://s3.ax1x.com/2021/01/02/sp9g1O.jpg',
+				},
+				{
+					fontIcon: '\ue68d',
+					url: 'mailto:naokimidori@163.com',
+				},
+			]
+		}
+	},
+	methods: {
+		handleGoLink(url) {
+			window.open(url)
+		}
+	}
 }
 </script>
 
@@ -51,6 +83,7 @@ export default {
 		width: 160px;
 		height: 160px;
 		margin-bottom: 1em;
+		box-shadow: 0 0 0 0.3618em rgba(0,0,0,0.05);
 	}
 
 	&__intro {
@@ -63,6 +96,7 @@ export default {
 		padding-top: calc(var(--space) / 2);
 		
 		.font_icon {
+			cursor: pointer;
 			font-family: "iconfont";
 			font-size: 1.2em;
 			font-style:normal;
