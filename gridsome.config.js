@@ -1,7 +1,8 @@
 module.exports = {
-  siteName: 'Vino\'s blog',
+  siteName: 'Vino',
   siteDescription: 'Keep Calm And Carry On',
   icon: './src/assets/images/favicon.png',
+  titleTemplate: "%s",
 
   templates: {
     Post: '/post/:title',
