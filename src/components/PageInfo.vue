@@ -1,8 +1,10 @@
 <template>
-  <Pager
-    :info="pageInfo"
-    linkClass="pager_link"
-  />
+  <div class="pageInfo_wrapper">
+    <Pager
+      :info="pageInfo"
+      linkClass="pager_link"
+    />
+  </div>
 </template>
 
 <script>
@@ -16,12 +18,14 @@ export default {
 </script>
 
 <style lang="scss">
-.pager_link {
-  color: var(--body-color);
-  margin: 0 4px;
-  text-decoration: none;
-}
-.active--exact {
-  color: #8ca8be !important;
+.pageInfo_wrapper {
+  .pager_link {
+    color: var(--body-color);
+    margin: 0 4px;
+    text-decoration: none;
+  }
+  .active--exact {
+    color: #8ca8be !important;
+  }
 }
 </style>
