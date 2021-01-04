@@ -46,7 +46,6 @@ export default {
       meta: [
         {
           name: 'description',
-          content: this.$page.post.description
         }
       ]
     }
@@ -59,16 +58,14 @@ query Post ($id: ID!) {
   post: post (id: $id) {
     title
     path
-    date (format: "D. MMMM YYYY")
+    date (format: "YYYY/MM/DD")
     timeToRead
     tags {
       id
       title
       path
     }
-    description
     content
-    cover_image (width: 860, blur: 10)
   }
 }
 </page-query>

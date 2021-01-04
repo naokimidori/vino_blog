@@ -26,10 +26,8 @@ query ($page: Int) {
       node {
         id
         title
-        date (format: "YYYY/MM/DD")
+        date (format: "YYYY/MM/DD") 
         timeToRead
-        description
-        cover_image (width: 770, height: 380, blur: 10)
         path
         tags {
           id
