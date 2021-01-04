@@ -1,6 +1,9 @@
 <template>
   <Layout>
     <div class="posts_page_wrapper">
+      <h1 class="tag-title text-center space-bottom">
+        ALL POSTS
+      </h1>
       <div class="posts_list">
         <PostCard
           v-for="edge in $page.posts.edges"
@@ -52,7 +55,7 @@ export default {
     PageInfo,
   },
   metaInfo: {
-    title: 'Posts'
+    title: 'All Posts'
   }
 }
 </script>

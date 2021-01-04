@@ -1,11 +1,13 @@
 <template>
   <Layout>
-    <h1 class="tag-title text-center space-bottom">
-      # {{ $page.tag.title }}
-    </h1>
+    <div class="template_tag">
+      <h1 class="tag-title text-center space-bottom">
+        # {{ $page.tag.title }}
+      </h1>
 
-    <div class="posts">
-      <PostCard v-for="edge in $page.tag.belongsTo.edges" :key="edge.node.id" :post="edge.node"/>
+      <div class="posts">
+        <PostCard v-for="edge in $page.tag.belongsTo.edges" :key="edge.node.id" :post="edge.node"/>
+      </div>
     </div>
   </Layout>
 </template>
@@ -40,13 +42,18 @@ export default {
     Author,
     PostCard
   },
-  metaInfo: {
-    title: 'Hello, world!'
+  metaInfo () {
+    return {
+      title: '#' + this.$page.tag.title,
+    }
   }
 }
 </script>
 
 <style lang="scss">
-
+.template_tag {
+  max-width: 800px;
+  margin: 0 auto
+}
 </style>
 
