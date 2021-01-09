@@ -1,7 +1,7 @@
 ---
 title: 高阶函数之map filter reduce
 date: 2019-10-10
-tags: ['javascript', 'ES6']
+tags: ['JavaScript', 'ES6']
 ---
 
 # 高阶函数

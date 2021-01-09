@@ -1,7 +1,7 @@
 ---
 title: "['1', '2', '3'].map(parseInt) what & why ?"
 date: 2019-07-13
-tags: ['javascript', 'ES6']
+tags: ['JavaScript', 'ES6']
 ---
 
 > 转自 [https://github.com/sisterAn/blog/issues/19](https://github.com/sisterAn/blog/issues/19) 侵删
