@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[6],{bNZn:function(n,e,t){"use strict";t.r(e);var s={},a=t("XSKF"),i=Object(a.a)(s,(function(){var n=this.$createElement;return(this._self._c||n)("div",[this._v("Page Tags")])}),[],!1,null,null,null);e.default=i.exports}}]);
