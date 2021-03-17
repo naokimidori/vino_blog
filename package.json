@@ -2,8 +2,8 @@
   "name": "gridsome-starter-blog",
   "private": true,
   "scripts": {
-    "build": "gridsome build",
     "dev": "gridsome develop",
+    "build": "gridsome build",
     "explore": "gridsome explore"
   },
   "dependencies": {
