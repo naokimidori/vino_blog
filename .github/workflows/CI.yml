@@ -17,5 +17,5 @@ jobs:
         ACCESS_TOKEN: ${{ secrets.BLOG_TOKEN }}
         BRANCH: vc_page
         BUILD_SCRIPT: npm install && npm run build
-        FOLDER: dist
+        FOLDER: .
 
