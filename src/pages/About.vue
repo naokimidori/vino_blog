@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <div class="page_about_wrapper">
-      <div class="markdown-body" v-html="$page.post.content" />
+      <div v-if="$page.post" class="markdown-body" v-html="$page.post.content" />
     </div>
   </Layout>
 </template>
