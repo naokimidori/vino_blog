@@ -10,12 +10,12 @@
         <g-link class="header__right_text" to="/posts">
           <span>Posts</span>
         </g-link>
-        <!-- <g-link class="header__right_text" to="/tags">
+        <g-link class="header__right_text" to="/tags">
           <span>Tags</span>
-        </g-link> -->
-        <g-link class="header__right_text" to="/about">
-          <span>About</span>
         </g-link>
+        <!-- <g-link class="header__right_text" to="/about">
+          <span>About</span>
+        </g-link> -->
         <ToggleTheme />
       </div>
       
