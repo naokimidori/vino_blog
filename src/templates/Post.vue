@@ -95,17 +95,17 @@ query Post ($id: ID!) {
     }
   }
 
-  &__content {
-    h2:first-child {
-      margin-top: 0;
-    }
+  // &__content {
+  //   h2:first-child {
+  //     margin-top: 0;
+  //   }
 
-    p:first-of-type {
-      font-size: 1.2em;
-      color: var(--title-color);
-    }
+  //   p:first-of-type {
+  //     font-size: 1.2em;
+  //     color: var(--title-color);
+  //   }
 
-  }
+  // }
 }
 
 .post-comments {
